@@ -14,7 +14,7 @@ for (var i = 0; i < arr.length; i++) {
   if (arr[i] > max) {
     max = arr[i];
   }
-  找到最小值;
+  //找到最小值;
   if (arr[i] < min) {
     min = arr[i];
   }

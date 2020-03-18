@@ -5,7 +5,7 @@ var result_arr = [];
 for (var i = 0; i < arr1.length; i++) {
     // 若数组1的元素存在与数组2中
     if (arr2.includes(arr1[i])) {
-        则把数组1中的该元素存进结果数组中
+       // 则把数组1中的该元素存进结果数组中
         result_arr.push(arr1[i]);
     }
 }

@@ -1,6 +1,6 @@
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 // 定义两个累加器
-var count1 = 0;
+var count1 = 1;
 var count2 = 0;
 for (var i = 0; i < arr.length; i++) {
   count1++;

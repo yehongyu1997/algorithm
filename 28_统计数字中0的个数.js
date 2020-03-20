@@ -7,6 +7,8 @@ function calcZero(n){
             count++;
         }
     }
-    console.log('数字'+n+'中0的个数是'+count+'个0');
+    return count;
 }
-calcZero(333333);
+
+console.log('数字中的个数是'+calcZero(2020)+'个0');
+

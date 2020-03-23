@@ -955,7 +955,7 @@
 var products= obj.products;
 // 遍历
 for(var k in products){
-    // 把每个products的键名赋给数组
+    // 把每个products的键名对应的value值（也就是数组）赋给数组
     var arr= products[k];
     // 累加器
     var sum = 0;
@@ -967,11 +967,4 @@ for(var k in products){
 }
 
 
-// 问题是：健康坚果、坚果礼盒、果干蜜饯、糖巧布丁、肉食卤味、豆干辣条、面包蛋糕
-// // 、饼干膨化、鱿鱼海味的属于该类型的全部商品的总价格分别是多少？请在控制台输出。
-// var sum = 0 ;
-// for(var i=0 ;i<obj.products.健康坚果.length;i++){
-//     sum+=obj.products.健康坚果.price;
-    
-// }
-// console.log(sum);
+

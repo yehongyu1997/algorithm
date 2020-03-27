@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录盒子</title>
+    <style>
+      .box {
+        height: 300px;
+        width: 260px;
+        border: 1px solid #000;
+        margin: 30px auto;
+        background-color: pink;
+        border-radius: 4px;
+      }
+      h3 {
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+      }
+      .username {
+        height: 48px;
+        width: 228px;
+        margin-left: 15px;
+        border: 1px solid #000;
+        border-radius: 4px;
+      }
+      .username .name {
+        float: left;
+        width: 148px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 44px;
+        border: 1px solid transparent;
+        border-radius: 4px 0 0 4px;
+      }
+      span {
+        float: left;
+        height: 48px;
+        width: 78px;
+        line-height: 48px;
+        font-size: 14px;
+        background-color: #fff;
+        border-radius: 0 4px 4px 0;
+      }
+      .password .psd {
+        height: 48px;
+        width: 228px;
+        margin-left: 15px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      .kuang {
+        height: 40px;
+        margin-top: 10px;
+        padding-left: 14px;
+      }
+      .kuang .kuang1 {
+        float: left;
+
+        width: 100px;
+        height: 38px;
+      }
+      #tishi {
+        float: left;
+        height: 38px;
+        width: 140px;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: yellow;
+        border-radius: 4px;
+        display: none;
+      }
+
+      .login button {
+        height: 50px;
+        width: 100px;
+        margin-left: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>邮箱账号登录</h3>
+      <div class="username">
+        <input type="text" placeholder="邮箱账号或手机号" class="name" />
+        <span>@163.com</span>
+      </div>
+      <div class="password">
+        <input type="password" placeholder="请输入密码" class="psd" />
+      </div>
+      <div class="kuang">
+        <div class="kuang1"><input type="checkbox" id="btn" />十天内免登陆</div>
+        <div id="tishi">为了信息安全，请勿在网吧或公用电脑上使用此功能！</div>
+      </div>
+      <div class="login">
+        <button>登录</button>
+        <button>注册</button>
+      </div>
+    </div>
+
+    <script>
+      var btn = document.getElementById("btn");
+      var tishi = document.querySelector("#tishi");
+      btn.onmouseenter = function() {
+        tishi.style.display = "block";
+      };
+      btn.onmouseleave = function() {
+        tishi.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
